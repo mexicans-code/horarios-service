@@ -102,12 +102,14 @@ public class HorarioController {
         return ResponseEntity.ok(nuevoHorario);
     }
 
+    //editar pepito
     @PutMapping("/{id}")
     public ResponseEntity<HorarioEntity> actualizarHorario(@PathVariable int id, @RequestBody HorarioDTO horarioDTO) {
         horarioDTO.setId(id);
         HorarioEntity horarioActualizado = horarioService.actualizarHorario(horarioDTO);
         return ResponseEntity.ok(horarioActualizado);
     }
+
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> eliminarHorario(@PathVariable int id) {

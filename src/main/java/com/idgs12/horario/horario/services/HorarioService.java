@@ -113,7 +113,7 @@ public class HorarioService {
         return horario;
     }
 
-    // Actualizar horario
+    // Actualizar horario pepito
     @Transactional
     public HorarioEntity actualizarHorario(HorarioDTO horarioDTO) {
         HorarioEntity horario = entityManager.find(HorarioEntity.class, horarioDTO.getId());
