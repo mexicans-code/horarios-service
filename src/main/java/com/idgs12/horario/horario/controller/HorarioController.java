@@ -123,4 +123,15 @@ public class HorarioController {
     public List<HorarioResponseDTO> getHorariosPorGrupo(@PathVariable Integer grupoId) {
         return horarioService.findByGrupoId(grupoId);
     }
+    //funcionalidad de habilitar horario -- Maria Fernanda Rosas Briones
+    @PutMapping("/habilitar/{id}")
+    public ResponseEntity<String> habilitarHorario(@PathVariable int id) {
+        try {
+            horarioService.habilitarHorario(id);
+            return ResponseEntity.ok("Horario habilitado correctamente");
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body("Error: " + e.getMessage());
+        }
+    }
+
 }

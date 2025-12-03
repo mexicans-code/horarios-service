@@ -172,4 +172,16 @@ public class HorarioService {
                 .filter(h -> h != null)
                 .collect(Collectors.toList());
     }
+    //funcionalidad de habilitar horario-- Maria Fernanda Rosas Briones
+    @Transactional
+    public void habilitarHorario(int id) {
+        HorarioEntity horario = entityManager.find(HorarioEntity.class, id);
+
+        if (horario == null) {
+            throw new RuntimeException("Horario no encontrado");
+        }
+
+        horario.setActivo(true);
+        entityManager.merge(horario);
+    }
 }
