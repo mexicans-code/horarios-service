@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.idgs12.horario.horario.dto.MateriaDTO;
 
-@FeignClient(name = "materias", url = "http://materias:8083")
+@FeignClient(name = "materias", url = "https://materias-repository-production.up.railway.app")
 public interface MateriaFeignClient {
 
     @GetMapping("/materias/{id}")

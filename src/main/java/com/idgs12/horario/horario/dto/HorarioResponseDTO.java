@@ -10,6 +10,11 @@ public class HorarioResponseDTO {
     private String horaFin;
     private String aula;
     private Boolean activo;
-    private GrupoDTO grupo; // Objeto completo del grupo
-    private MateriaDTO materia; // ✅ Objeto completo de la materia
+    private GrupoDTO grupo;
+    private MateriaDTO materia;
+    private ProfesorDTO profesor;
+<<<<<<< HEAD
+
+=======
+>>>>>>> e3a10b5 (feat: agregar visualización y obtención de horarios)
 }

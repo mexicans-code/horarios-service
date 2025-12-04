@@ -14,5 +14,6 @@ public class HorarioDTO {
 
     private Integer grupoId;
     private Integer materiaId;
+    private Long profesorId;
 
 }

@@ -18,4 +18,7 @@ public class HorarioListDTO {
     // Materia ✅
     private Integer materiaId;
     private String materiaNombre;
+
+    private Long profesorId;
+    private String profesorNombre;
 }
