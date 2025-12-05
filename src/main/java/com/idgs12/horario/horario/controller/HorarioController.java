@@ -40,6 +40,9 @@ public class HorarioController {
     private HorarioProfesorRepository horarioProfesorRepository;
 
     @Autowired
+    private HorarioProfesorRepository horarioProfesorRepository;
+
+    @Autowired
     private GrupoFeignClient grupoFeignClient;
 
     @Autowired

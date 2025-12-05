@@ -13,8 +13,4 @@ public class HorarioResponseDTO {
     private GrupoDTO grupo;
     private MateriaDTO materia;
     private ProfesorDTO profesor;
-<<<<<<< HEAD
-
-=======
->>>>>>> e3a10b5 (feat: agregar visualización y obtención de horarios)
 }

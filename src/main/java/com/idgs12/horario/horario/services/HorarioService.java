@@ -42,6 +42,9 @@ public class HorarioService {
     private HorarioProfesorRepository horarioProfesorRepository;
 
     @Autowired
+    private HorarioProfesorRepository horarioProfesorRepository;
+
+    @Autowired
     private GrupoFeignClient grupoFeignClient;
     
     @Autowired
