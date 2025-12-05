@@ -11,7 +11,7 @@ public interface GrupoFeignClient {
 
     @GetMapping("/grupos/{id}")
     GrupoDTO getGrupoById(@PathVariable("id") Integer id);
-
+    
     @GetMapping("/grupos/usuario/{usuarioId}")
     GrupoDTO getGrupoByUsuarioId(@PathVariable Long usuarioId);
 }

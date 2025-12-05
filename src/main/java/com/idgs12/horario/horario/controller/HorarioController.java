@@ -35,6 +35,9 @@ public class HorarioController {
 
     @Autowired
     private HorarioMateriaRepository horarioMateriaRepository;
+    
+    @Autowired
+    private HorarioProfesorRepository horarioProfesorRepository;
 
     @Autowired
     private HorarioProfesorRepository horarioProfesorRepository;
