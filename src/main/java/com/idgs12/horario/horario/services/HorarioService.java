@@ -163,7 +163,7 @@ public class HorarioService {
 
     // ================================
     // ACTUALIZAR HORARIO
-    // ================================
+    // ================================ pepito
     @Transactional
     public HorarioEntity actualizarHorario(HorarioDTO horarioDTO) {
         System.out.println("🔄 Actualizando horario ID: " + horarioDTO.getId());
